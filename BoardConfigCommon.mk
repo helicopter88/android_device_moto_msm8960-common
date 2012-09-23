@@ -27,7 +27,7 @@
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8960-common/include
 
-DEVICE_PACKAGE_OVERLAYS += device/htc/msm8960-common/overlay
+BOARD_VENDOR := htc
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
