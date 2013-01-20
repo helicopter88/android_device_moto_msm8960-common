@@ -25,15 +25,15 @@
 # against the traditional rules of inheritance).
 
 # Include path
-TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8960-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/moto/msm8960-common/include
 
-BOARD_VENDOR := htc
+BOARD_VENDOR := moto
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/htc/msm8960
+TARGET_KERNEL_SOURCE := kernel/moto/msm8960
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
@@ -56,7 +56,6 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
-#BOARD_HAVE_HTC_AUDIO := true
 BOARD_USES_FLUENCE_INCALL := true
 
 # Bluetooth
@@ -76,7 +75,7 @@ USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 BOARD_HAVE_OLD_ION_API := true
-BOARD_EGL_CFG := device/htc/msm8960-common/configs/egl.cfg
+BOARD_EGL_CFG := device/moto/msm8960-common/configs/egl.cfg
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true

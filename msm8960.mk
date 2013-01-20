@@ -17,19 +17,19 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # overlays
-DEVICE_PACKAGE_OVERLAYS += device/htc/msm8960-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/moto/msm8960-common/overlay
 
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
-    device/htc/msm8960-common/ramdisk/init.qcom.sh:root/init.qcom.sh
+    device/moto/msm8960-common/ramdisk/init.qcom.sh:root/init.qcom.sh
 
 # Qualcomm scripts
 PRODUCT_COPY_FILES += \
-    device/htc/msm8960-common/configs/init.qcom.bt.sh:/system/etc/init.qcom.bt.sh \
-    device/htc/msm8960-common/configs/init.qcom.fm.sh:/system/etc/init.qcom.fm.sh \
-    device/htc/msm8960-common/configs/init.qcom.post_boot.sh:/system/etc/init.qcom.post_boot.sh \
-    device/htc/msm8960-common/configs/init.qcom.sdio.sh:/system/etc/init.qcom.sdio.sh \
-    device/htc/msm8960-common/configs/init.qcom.wifi.sh:/system/etc/init.qcom.wifi.sh
+    device/moto/msm8960-common/configs/init.qcom.bt.sh:/system/etc/init.qcom.bt.sh \
+    device/moto/msm8960-common/configs/init.qcom.fm.sh:/system/etc/init.qcom.fm.sh \
+    device/moto/msm8960-common/configs/init.qcom.post_boot.sh:/system/etc/init.qcom.post_boot.sh \
+    device/moto/msm8960-common/configs/init.qcom.sdio.sh:/system/etc/init.qcom.sdio.sh \
+    device/moto/msm8960-common/configs/init.qcom.wifi.sh:/system/etc/init.qcom.wifi.sh
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -122,21 +122,21 @@ PRODUCT_PACKAGES += \
 
 # GPS config
 PRODUCT_COPY_FILES += \
-    device/htc/msm8960-common/configs/gps.conf:system/etc/gps.conf
+    device/moto/msm8960-common/configs/gps.conf:system/etc/gps.conf
 
 # Thermal config
 PRODUCT_COPY_FILES += \
-    device/htc/msm8960-common/configs/thermald.conf:system/etc/thermald.conf
+    device/moto/msm8960-common/configs/thermald.conf:system/etc/thermald.conf
 
 # WPA supplicant config
 PRODUCT_COPY_FILES += \
-    device/htc/msm8960-common/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    device/moto/msm8960-common/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # Media config
 PRODUCT_COPY_FILES += \
-    device/htc/msm8960-common/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    device/htc/msm8960-common/configs/media_profiles.xml:system/etc/media_profiles.xml \
-    device/htc/msm8960-common/configs/media_codecs.xml:system/etc/media_codecs.xml
+    device/moto/msm8960-common/configs/audio_policy.conf:system/etc/audio_policy.conf \
+    device/moto/msm8960-common/configs/media_profiles.xml:system/etc/media_profiles.xml \
+    device/moto/msm8960-common/configs/media_codecs.xml:system/etc/media_codecs.xml
 
 # Common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
