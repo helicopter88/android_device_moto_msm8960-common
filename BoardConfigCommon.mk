@@ -75,7 +75,7 @@ USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 BOARD_HAVE_OLD_ION_API := true
-BOARD_EGL_CFG := device/moto/msm8960-common/configs/egl.cfg
+BOARD_EGL_CFG := device/htc/msm8960-common/configs/egl.cfg
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
